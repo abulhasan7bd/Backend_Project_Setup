@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 const app = require('./app')
 const { port } = require('./confiq/index')
@@ -8,6 +9,7 @@ connectDB()
 
 
 
+          const data = "fffffff"
 
 
 
