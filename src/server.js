@@ -5,6 +5,17 @@ const { port } = require('./confiq/index')
 const connectDB = require('./database/connectdb')
 connectDB()
 
+
+
+
+
+
+const ffff = 222222222
+
+
+
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
