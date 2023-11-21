@@ -24,3 +24,12 @@ $ yarn add -D prettier
     // formate 
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
     "lint-prettier": "yarn lint:check && yarn prettier:check"
+
+
+husky ----------->
+link === https://typicode.github.io/husky/getting-started.html
+$ yarn add -D husky
+hoks inable
+& npx husky install
+create 
+yarn husky add .husky/pre-commit "npm test"
