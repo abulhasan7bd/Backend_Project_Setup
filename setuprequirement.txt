@@ -1,0 +1,26 @@
+yarn init -v
+yarn add express mongoose
+yarn add -D nodemon
+rotte src file
+
+cors use ---> frontent theke data gulo jeno valo kore wread korte pare 
+yarn add -D cors
+
+api.http --->create 
+
+eslint ----------->
+yarn add -D  eslint
+config --- npx eslint --init
+yarn run eslint src ---- no errors
+
+prettier---------->
+$ yarn add -D prettier
+
+
+++ok++2
+    "lint:check": "eslint src",
+    "prettier:check": "prettier src --check",
+    "prettier:fix": "prettier src --write",
+    // formate 
+    "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+    "lint-prettier": "yarn lint:check && yarn prettier:check"
