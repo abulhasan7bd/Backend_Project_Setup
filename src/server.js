@@ -6,17 +6,9 @@ const { port } = require('./confiq/index')
 const connectDB = require('./database/connectdb')
 connectDB()
 
+const data = 'fffffff'
 
-
-
-          const data = "fffffff"
-
-
-
-
-
-
-
+const x = 'tobead'
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })

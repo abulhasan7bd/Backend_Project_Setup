@@ -33,3 +33,9 @@ hoks inable
 & npx husky install
 create 
 yarn husky add .husky/pre-commit "npm test"
+
+
+
+
+lint staged ---------->
+yarn add -D lint-staged
