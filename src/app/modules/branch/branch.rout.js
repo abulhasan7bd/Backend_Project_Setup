@@ -5,11 +5,10 @@
 const router = require('express').Router()
 const brachControler = require('./branch.controler')
 
-router.get('/check', (req, res) => {
-  res.status(201).send('Hellow')
-  console.log('rout')
-})
-
 router.post('/create', brachControler.createBranch)
+router.get('/all', brachControler.allBranch)
+router.get('/single/:branchid', brachControler.singleBrach)
+router.post('/update', brachControler.updateBrach)
+router.patch('/delet', brachControler.deleteBrach)
 
 module.exports = router

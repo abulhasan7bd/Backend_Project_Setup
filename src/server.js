@@ -6,13 +6,6 @@ const { port } = require('./confiq/index')
 const connectDB = require('./database/connectdb')
 connectDB()
 
-const data = 'fffffff'
-
-const x = 'tobead'
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
