@@ -9,6 +9,7 @@ app.use(express.json())
 app.get('/health', (req, res) => {
   res.send('Health route')
 })
+
 app.use('/api/v1', routes)
 
 module.exports = app

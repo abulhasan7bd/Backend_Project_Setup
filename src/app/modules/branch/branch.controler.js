@@ -59,14 +59,39 @@ const allBranch = async (req, res) => {
   }
 }
 const updateBrach = async (req, res) => {}
-const deleteBrach = async (req, res) => {}
 
+const deleteBrach = async (req, res) => {
+  try {
+    await Brach.deleteMany({})
+    res.send({
+      delete: 'succesful',
+    })
+  } catch (err) {
+    res.status(401).send({
+      message: err.message,
+      delete: false,
+    })
+  }
+}
+
+const deletebyid = async (req, res) => {
+  try {
+    let deletid = req.params.id
+    await Brach.deleteOne({ _id: deletid })
+    res.status(201).send({
+      deletebyid: 'succesfull',
+    })
+  } catch (err) {
+    console.log('err deletbyid', err)
+  }
+}
 const brachControler = {
   createBranch: createBranch,
   singleBrach: singleBrach,
   allBranch: allBranch,
   updateBrach: updateBrach,
   deleteBrach: deleteBrach,
+  deletebyid: deletebyid,
 }
 
 module.exports = brachControler

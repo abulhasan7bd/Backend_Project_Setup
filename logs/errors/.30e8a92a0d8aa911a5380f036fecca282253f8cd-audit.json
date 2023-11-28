@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Mamun Vai DevZero One\\backend_project_setup\\logs\\errors\\.30e8a92a0d8aa911a5380f036fecca282253f8cd-audit.json",
+    "files": [
+        {
+            "date": 1701185151565,
+            "name": "D:\\Mamun Vai DevZero One\\backend_project_setup\\logs\\errors\\application-2023-11-28-21.log",
+            "hash": "5667bcf3a8d2bdac0a8c7586f7b6926557b5d20ca5d9ca45b219e7a6900230b8"
+        }
+    ],
+    "hashType": "sha256"
+}

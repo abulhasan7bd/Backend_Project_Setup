@@ -9,6 +9,7 @@ router.post('/create', brachControler.createBranch)
 router.get('/all', brachControler.allBranch)
 router.get('/single/:branchid', brachControler.singleBrach)
 router.post('/update', brachControler.updateBrach)
-router.patch('/delet', brachControler.deleteBrach)
+router.delete('/delet', brachControler.deleteBrach)
+router.delete('/deletbyid/:id', brachControler.deletebyid)
 
 module.exports = router
